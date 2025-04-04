@@ -1,0 +1,496 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light+Two&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Shadows+Into+Light+Two&display=swap");
+
+*{
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body{
+    margin: 0;
+    font-family: "Shadows Into Light Two", sans-serif;
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+
+.contenidoHeader{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoHeader{
+
+}
+.menuHeader{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.listaMenu{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+.listaMenu:hover{
+    color: brown;
+}
+
+/* MAIN */
+
+
+.contenidoMain{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../IMAGES/FONDO\ INICIO.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parrafoMain{
+    font-size: 3em;
+    color: white;
+}
+.posicionBotonesMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.botonesMain{
+    text-decoration: none;
+    color: black;
+}
+.contenidoDescripcion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    background-color: antiquewhite;
+}
+.descripcion{
+    width: 40vw;
+    height: 30vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Red Hat Text", sans-serif;
+}
+.fotoDescripcionMain{
+    width: 50vw;
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: end;
+}
+button{
+    background:rgb(252, 184, 58);
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    margin: 5px;
+    font-family: "Shadows Into Light Two", sans-serif;
+    border-radius: 3px;
+  }
+  button:hover{
+    background-color: antiquewhite;
+    color:orange;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: black;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+
+
+/* FOOTER */
+
+.contenidoFooter{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+.politicaPrivacidad{
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 20px;
+}
+.contenidoImagenes{
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.imagenesFooter{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.parrafoPolitica{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 0.7em;
+}
+
+
+/* MAIN PANADERIA  Y PASTELERIA*/
+
+.mainPanaderia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150vh;
+    background-color: antiquewhite;
+}
+.contenidoMainPanaderia{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../IMAGES/FONDO\ INICIO.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position-x: center;
+    background-position-y: -200px;
+}
+.contenidoMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 120vh;
+    background-color: white;
+    margin: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 20px rgb(109, 108, 108);
+}
+.posicionLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 20vh;
+}
+.menuConFoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 20vh;
+}
+.logoMainPanaderia{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 30vw;
+    height: 20vh;
+}
+.fotoLogo{
+    width: 150px;
+}
+.catalogoPanaderia{
+    font-size: 2.5em;
+}
+.posicionPan{
+    width: 60vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    text-align: center; 
+    border-bottom: 2px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    width: 50%;
+    font-size: 1.4em;
+}
+h3 span { 
+    background-color: #fff; 
+    padding:0 10px; 
+  }
+.titulo{
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fotoPanBlanco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+    height: 30vh;
+}
+.fotoPan{
+    width: 250px;
+}
+
+
+/* MAIN NUESTRAS TIENDAS */
+
+.mainTiendas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 140vh;
+    background-color: antiquewhite;
+}
+.tituloTiendas{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    background-color: white;
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+}
+.localidad{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    margin: 190px;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+.fotoTiendas{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fotoTienda2{
+    width: 250px;
+    height: 250px;
+    border: 1px solid;
+    box-shadow: 2px 2px 20px rgb(109, 109, 109);
+}
+.descripcionTiendas{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.primeraTienda{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.segundaTienda{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.terceraTienda{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.cuartaTienda{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.vectoresTiendas{
+    width: 20px;
+    height: 20px;
+}
+.lineaTiendas{
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    color: black;
+}
+.encargosTartas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 40vh;
+    background: url(../IMAGES/FONDO\ INICIO.jpg);
+    border-radius: 30px;
+    margin-top: 100px;
+    background-position-x: center;
+    background-position-y: -150px;
+    box-shadow: 2px 2px 50px rgb(108, 108, 108);
+    text-align: center;
+}
+
+/* MAIN CONTACTO */
+
+.mainContacto{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.contenedorForm{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 30px rgb(126, 126, 126);
+}
+.mapa{
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    width: 25vw;
+    height: 69.9vh;
+    border: none;
+}
+.formulario{
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+}
+form{
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 20vw;
+    height: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+input:focus{
+    background-color:aliceblue;
+}
+textarea{
+    width: 20vw;
+    height: 100px;
+    margin-top: 50px;
+}
+textarea:focus{
+    background-color:aliceblue;
+}
+.botonEnviar{
+    width: 5vw;
+    height: 30px;
+    margin-top: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+.botonEnviar:hover{
+    background-color: orange;
+    color: white;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.lineaForm{
+    width: 15vw;
+    background-color: orange;
+    border: 1px solid orange;
+}
